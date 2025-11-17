@@ -1,0 +1,126 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0b2b52, #154070);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .page2 {
+      display: flex;
+      width: 900px;
+      max-width: 95%;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    .form-page2 {
+      width: 50%;
+      padding: 60px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .form-page2 h1 {
+      font-size: 1.8rem;
+      color: #1a3b61;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .form-page2 input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s ease;
+    }
+    .form-page2 input:focus {
+      border-color: #1a3b61;
+      outline: none;
+    }
+    .form-page2 button {
+      background-color: #1a3b61;
+      border: none;
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .form-page2 button a {
+       color: #fff;
+      text-decoration: none;
+     }
+    .form-page2 button:hover {
+      background-color: #274b7a;
+    }
+    .form-page2 p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .form-page2 p a {
+      color: #1a3b61;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .form-page2 p a:hover {
+      text-decoration: underline;
+    }
+    .info-page2 {
+      width: 50%;
+      background: #1a3b61;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+    .logo-circle {
+      background-color: #fff;
+      color: #1a3b61;
+      font-weight: bold;
+      font-size: 2rem;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .info-page2 h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .info-page2 p {
+      font-size: 1.1rem;
+      max-width: 400px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .page2 {
+        flex-direction: column;
+      }
+      .form-page2, .info-page2 {
+        width: 100%;
+        padding: 40px;
+      }
+      .info-page2 {
+        border-radius: 0 0 16px 16px;
+      }
+    }

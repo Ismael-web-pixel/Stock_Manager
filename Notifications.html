@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./Notifications.css">
+</head>
+
+<body>
+    <div class="page3">
+
+        <!-- SIDEBAR (avec un id pour :target) -->
+        <div class="sidebar" id="menu">
+            <a href="#" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+
+            <div class="said">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Dashboard</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="./dashboard.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+                </li>
+                <li>
+                    <a href="./Analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                </li>
+                <li>
+                    <a href="./Commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                </li>
+                <li>
+                    <a href="./Parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                </li>
+                <li>
+                    <a href="./Rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                </li>
+                <li class="active">
+                    <a href="./Notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="gestionnaire">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="ab">
+                        <h3>Administrateur</h3>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h4>Mon profil</h4>
+                </div>
+                <div class="deconnexion">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Déconnexion</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- MAIN -->
+        <div class="main">
+            <nav>
+                <!-- Bouton pour ouvrir le menu -->
+                <a href="#menu" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <h5>Gestion de Stock - Produits Électroniques</h5>
+
+                <div class="section_icon">
+                    <div class="div_notif">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="profile">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="user-role">Administrateur</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="alerte">
+                    <div class="bell-1">
+                        <i class="fa-solid fa-bell"></i>
+                        <h1> Notifications et Alertes</h1>
+                    </div>
+                    <p>Centre de notification et gestion des alertes de systeme</p>
+                </div>
+                <div class="center">
+                    <div class="display1">
+                        <div class="ca1">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="p1">
+                            <h1>12</h1>
+                            <p>Non lues</p>
+                        </div>
+                    </div>
+                    <div class="display2">
+                        <div class="ca1">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="p1">
+                            <h1>3</h1>
+                            <p>Urgentes</p>
+                        </div>
+                    </div>
+                    <div class="display3">
+                        <div class="ca1">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="p1">
+                            <h1>23</h1>
+                            <p>Aujourd'hui</p>
+                        </div>
+                    </div>
+                    <div class="display4">
+                        <div class="ca1">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="p1">
+                            <h1>156</h1>
+                            <p>Total</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contt">
+                    <div class="critique">
+                        <div class="filtre">
+                            <p>Type:</p>
+                            <select name="" id="">
+                                <option value="">Commandes</option>
+                                <option value="">Stock</option>
+                                <option value="">Toutes</option>
+                                <option value="">systeme</option>
+                                <option value="">Sécurité</option>
+                            </select>
+                        </div>
+                        <div class="filtre">
+                            <p>Priorité:</p>
+                            <select name="" id="">
+                                <option value="">Urgent</option>
+                                <option value="">Haute</option>
+                                <option value="">Toutes</option>
+                                <option value="">Moyenne</option>
+                                <option value="">Basse</option>
+                            </select>
+                        </div>
+                        <div class="filtre">
+                            <p>Statut:</p>
+                            <select name="" id="">
+                                <option value="">Non Lues</option>
+                                <option value="">Toutes</option>
+                                <option value="">Lues</option>
+                            </select>
+                        </div>
+                        <div class="fil">
+                            <button><i class="fa-solid fa-filter"></i>
+                                <p>Filter</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detecte">
+                    <div class="rectangle">
+                        <div class="triangl">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="plaq">
+                            <h2>Stock critique detecté</h2>
+                            <p>Le produit "Airpods Pro 2" a atteint le seuil critique de stock (3 unités restantes).
+                                Veuillez passer commande rapidement.</p>
+                                <div class="span">
+                            <span>Passer Une Commande</span>
+                            <button>Marquer non lu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ya">
+                        <p>Il y'a 5 minutes</p>
+                    </div>
+                </div>
+                <div class="detecte info">
+                    <div class="rectangle">
+                        <div class="triangl bleu">
+                            <i class="fa-solid fa-info"></i>
+                        </div>
+                        <div class="plaq">
+                            <h2>Stock critique detecté</h2>
+                            <p>Le produit "Airpods Pro 2" a atteint le seuil critique de stock (3 unités restantes).
+                                Veuillez passer commande rapidement.</p>
+                                <div class="span">
+                            <span>Passer Une Commande</span>
+                            <button>Marquer non lu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ya">
+                        <p>Il y'a 5 minutes</p>
+                    </div>
+                </div>
+                <div class="detected">
+                    <div class="rectangle">
+                        <div class="circle">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="plaq">
+                            <h2>Commande expédiée</h2>
+                            <p>Commande #CMD - 2024 - 003 a été expédiée avec succés. Numero de suivi:FR123456789.</p>
+                                <div class="span">
+                            <span>Suivre renvoi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ya">
+                        <p>Il y'a 5 minutes</p>
+                    </div>
+                </div>
+                <div class="detected">
+                    <div class="rectangle">
+                        <div class="gear">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="plaq">
+                            <h2>Sauvegarde automatique terminée</h2>
+                            <p>Sauvegarde quotidienne des données terminé avec succés. 2.3 GB de données Sauvegardées.</p>
+                                <div class="span">
+                            <button>Voir les details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ya">
+                        <p>Il y'a 5 minutes</p>
+                    </div>
+                </div>
+                <div class="detected">
+                    <div class="rectangle">
+                        <div class="shield">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <div class="plaq">
+                            <h2>Connexion depuis un nouvel pareil</h2>
+                            <p>Connexion detectée depuis un nouvel appareil (iphone, Paris, France). Si ce n'est pas vous, changer votre mot de passe.</p>
+                                <div class="span">
+                            <button>Securiser le compte</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ya">
+                        <p>Il y'a 5 minutes</p>
+                    </div>
+                </div>
+                <div class="detected">
+                    <div class="plaq">
+                        <label for="">
+                                <input type="checkbox" name="" id="">
+                                Selectionner tout
+                         </label>
+                    </div>
+                    <div class="span">
+                            <button>Marquer non lu</button>
+                        <div class="trash">
+                            <i class="fa-solid fa-trash"></i> 
+                            <p>Suprimmer</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

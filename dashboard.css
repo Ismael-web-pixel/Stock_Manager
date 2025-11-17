@@ -1,0 +1,651 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #063695;
+  color: white;
+  height: 100vh;
+}
+
+
+
+
+
+/* --------------------------------- STRUCTURE------------------------ ----- */
+.page3 {
+  display: flex;
+  height: 100vh;
+}
+
+/* ------------------------------- SIDEBAR--------------------- ---------------------- */
+.sidebar {
+  width: 250px;
+  background-color: #202E43;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.said {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.said i {
+  font-size: 1.8rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 10px 0;
+}
+.active {
+  background-color: #2563eb;
+}
+.menu li a {
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #2f4465;
+}
+
+/*----------------------------- Bouton fermer dans le menu --------------------------------*/
+.close-btn {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 15px 20px;
+}
+
+/* ----- ----------------------------SIDEBAR FOOTER --------------------------------------- */
+.sidebar-footer {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+  border-top: 1px solid #2f4465;
+}
+
+.gestionnaire {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #2E3C50;
+}
+
+.gestionnaire i {
+  color: #286EED;
+  font-size: 2.5rem;
+}
+
+.ab {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profil {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #2E3C50;
+}
+
+.deconnexion {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border: solid red;
+  border-radius: 10px;
+  align-items: center;
+  background-color: red;
+}
+
+/*-------------------------------------------- NAVBAR ------------------------------------*/
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h5 {
+  color: rgb(82, 80, 80);
+  font-size: 1.2rem;
+}
+
+.section_icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.div_notif {
+  position: relative;
+}
+
+.div_notif i {
+  font-size: 1.5rem;
+  color: rgb(114, 110, 110);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  right: -1px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  font-size: 0.8rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile i {
+  color: rgb(114, 110, 110);
+  font-size: 1.5rem;
+}
+
+.profile span {
+  color: rgb(114, 110, 110);
+  font-size: 1rem;
+}
+
+/* ----------------------------------------- BOUTON MENU ----------------------------- */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #202E43;
+}
+
+/* --------------------------------------- MAIN ------------------------------- */
+.main {
+  flex: 1;
+  background-color: #f2f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------- mes_sections  content ------------------------------- */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 60px;
+  overflow-y: scroll;
+}
+
+
+
+/* --------------------------------------------- BLOCK 1 -------------------------------------------- */
+.block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.ih1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.block1 h1 {
+  font-size: 2.3rem;
+  color: #111827;
+}
+
+.block1 p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+/*--------------------------------------------- ANALYTICS CARDS --------------------------------------------    */
+.Analytics_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card i {
+  color: #fff;
+  font-size: 2rem;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-card .ih2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.stat-card h2 {
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.stat-card p {
+  color: #65748b;
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------- Couleurs des cartes ————————————————-------------------------------------------- */
+.blue {
+  background-color: #286EED;
+  border-radius: 10px;
+
+}
+
+.worning {
+  background-color: #F59E0C;
+  border-radius: 10px;
+
+}
+
+.green {
+  background-color: #13B981;
+  border-radius: 10px;
+
+}
+
+
+.gray {
+  background-color: #65748B;
+  border-radius: 10px;
+
+}
+
+/* --------------------------------------------- BLOCK 1 -------------------------------------------- */
+/* ------- Section principale ------- */
+.stocks {
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+.stocks {
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+}
+
+/* ------- Header ------- */
+.stock-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stock-header h2 {
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.stock-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.stock-input {
+  width: 30%;
+}
+
+.stock-input input {
+  padding: 15px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  width: 100%;
+  outline: none;
+}
+
+.stock-actions button {
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.stock-actions .add {
+  background-color: #286eed;
+  color: white;
+}
+
+.stock-actions .add:hover {
+  background-color: #1f56c5;
+}
+
+.stock-actions .export {
+  background-color: #e5e7eb;
+}
+
+.stock-actions .export:hover {
+  background-color: #d1d5db;
+}
+
+/* ------- Table ------- */
+.stock-table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.stock-table,
+.stock-table {
+  padding: 15px 20px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.stock-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+.stock-table tr {
+  border-bottom: 1.5px solid #f3f4f6;
+}
+.stock-table th, td {
+  padding: 40px;
+}
+
+.stock-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* ------- Colonnes ------- */
+.product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product i {
+  font-size: 1.5rem;
+  background: #e5e7eb;
+  color: #374151;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.product p {
+  font-weight: 600;
+}
+
+.product span {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+/* ------- Tags ------- */
+.category {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.category.blue {
+  background-color: #deecfd;
+  color: #2563eb;
+}
+
+.category.orange {
+  background-color: #fff4e5;
+  color: #ed9907;
+}
+
+.category.green {
+  background-color: #e0fceb;
+  color: #0ead7f;
+}
+
+.category.purple {
+  background-color: #ede9fe;
+  color: #6d28d9;
+}
+
+.stock {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.stock.good {
+  background-color: #e0fceb;
+  color: #047857;
+}
+
+.stock.low {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.stock.danger {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.status.active {
+  background-color: #e1fce9;
+  color: #166534;
+}
+
+.status.low {
+  background-color: #fff4e5;
+  color: #b45309;
+}
+
+/* ------- Actions ------- */
+.actions i {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.actions i:hover {
+  color: #111827;
+}
+
+/* ------- Responsive ------- */
+@media (max-width: 768px) {
+  .stock-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stock-actions {
+    width: 100%;
+  }
+
+  .stock-actions input {
+    flex: 1;
+    width: 100%;
+  }
+
+  .stock-table th,
+  .stock-table td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .product p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .page3 {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 20;
+  }
+
+  .sidebar:target {
+    transform: translateX(0);
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}

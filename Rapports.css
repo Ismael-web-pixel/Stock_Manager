@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #063695;
+  color: white;
+  height: 100vh;
+}
+
+
+
+
+
+/* --------------------------------- STRUCTURE------------------------ ----- */
+.page3 {
+  display: flex;
+  height: 100vh;
+}
+
+/* ------------------------------- SIDEBAR--------------------- ---------------------- */
+.sidebar {
+  width: 250px;
+  background-color: #202E43;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.said {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.said i {
+  font-size: 1.8rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 10px 0;
+}
+.active {
+  background-color: #2563eb;
+}
+.menu li a {
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #2f4465;
+}
+
+/*----------------------------- Bouton fermer dans le menu --------------------------------*/
+.close-btn {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 15px 20px;
+}
+
+/* ----- ----------------------------SIDEBAR FOOTER --------------------------------------- */
+.sidebar-footer {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+  border-top: 1px solid #2f4465;
+}
+
+.gestionnaire {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #2E3C50;
+}
+
+.gestionnaire i {
+  color: #286EED;
+  font-size: 2.5rem;
+}
+
+.ab {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profil {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #2E3C50;
+}
+
+.deconnexion {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border: solid red;
+  border-radius: 10px;
+  align-items: center;
+  background-color: red;
+}
+
+/*-------------------------------------------- NAVBAR ------------------------------------*/
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h5 {
+  color: rgb(82, 80, 80);
+  font-size: 1.2rem;
+}
+
+.section_icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.div_notif {
+  position: relative;
+}
+
+.div_notif i {
+  font-size: 1.5rem;
+  color: rgb(114, 110, 110);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  right: -1px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  font-size: 0.8rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile i {
+  color: rgb(114, 110, 110);
+  font-size: 1.5rem;
+}
+
+.profile span {
+  color: rgb(114, 110, 110);
+  font-size: 1rem;
+}
+
+/* ----------------------------------------- BOUTON MENU ----------------------------- */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #202E43;
+}
+
+/* --------------------------------------- MAIN ------------------------------- */
+.main {
+  flex: 1;
+  background-color: #f2f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+ .content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 40px 60px;
+      overflow-y: auto;
+    }
+
+    /* ---------- TITRE ---------- */
+    .titre p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .icon i {
+      font-size: 2rem;
+      color: #2768E9;
+      margin-right: 10px;
+    }
+
+    /* ---------- FORMAT 1 (Filtres) ---------- */
+    .format1 {
+      gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 50px;
+      border-radius: 7px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .Type {
+      flex: 1 1 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .Type p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    .Type select {
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .Type button {
+      background-color: #2768E9;
+      padding: 12px 30px;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .Type button:hover {
+      background-color: #517bcf;
+    }
+
+    /* ---------- FORMAT 2 (Cartes statistiques) ---------- */
+    .format2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .Ventes {
+      flex: 1 1 300px;
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .Ventes:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .Ventes i {
+      font-size: 1.8rem;
+      color: white;
+      background-color: #2768E9;
+      height: 70px;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+    .ligne_2_2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .euro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .e span {
+      color: #2768E9;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .ligne_2_2 button {
+      width: fit-content;
+      padding: 10px 15px;
+      background-color: #f4f5f8;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .ligne_2_2 button:hover {
+      background-color: #e1e3e9;
+    }
+
+    /* ---------- FORMAT 3 (Historique des rapports) ---------- */
+    .format3 {
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow-x: auto;
+    }
+    .rique {
+      display: flex;
+      align-items: center;
+      padding: 35px;
+      background-color: #65748B;
+      color: white;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .rique i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+
+    .janvier, .fervier, .mars, .avril {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 35px;
+    }
+    .janvier {
+      background-color: #F6F7FB;
+      font-weight: bold;
+    }
+    .fervier, .mars, .avril {
+      background-color: white;
+      transition: background 0.3s ease;
+    }
+    .fervier:hover, .mars:hover, .avril:hover {
+      background-color: #F1F3F8;
+    }
+    .action {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      align-items: center;
+    }
+    .x {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 0;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+  .page3{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 20;
+  }
+
+  .sidebar:target{
+    transform: translateX(0);
+  }
+
+  .close-btn{
+    display: block;
+  }
+
+  .menu-btn{
+    display: block;
+  }
+
+  .main{
+    margin-left: 0;
+  }
+
+  nav{
+    gap: 10px;
+  }
+}

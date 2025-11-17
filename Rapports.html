@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="Rapports.css">
+</head>
+
+<body>
+    <div class="page3">
+
+        <div class="sidebar" id="menu">
+            <a href="#" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+
+            <div class="said">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Dashboard</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="./dashboard.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+                </li>
+                <li>
+                    <a href="./Analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                </li>
+                <li>
+                    <a href="./Commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                </li>
+                <li>
+                    <a href="./Parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                </li>
+                <li class="active">
+                    <a href="./Rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                </li>
+                <li>
+                    <a href="./Notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="gestionnaire">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="ab">
+                        <h3>Administrateur</h3>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h4>Mon profil</h4>
+                </div>
+                <div class="deconnexion">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Déconnexion</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- MAIN -->
+        <div class="main">
+            <nav>
+                <!-- Bouton pour ouvrir le menu -->
+                <a href="#menu" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <h5>Gestion de Stock - Produits Électroniques</h5>
+
+                <div class="section_icon">
+                    <div class="div_notif">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="profile">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="user-role">Administrateur</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="titre">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <h1>Rapports & Analytics</h1>
+                    </div>
+                    <p>Génération et Consultation des Rapports détaillés</p>
+                </div>
+
+                <div class="format1">
+                    <div class="Type">
+                        <p>Type de rapport:</p>
+                        <select>
+                            <option>Rapports des Ventes</option>
+                            <option>Rapports de Stock</option>
+                            <option>Rapports Financiers</option>
+                            <option>Rapports Clients</option>
+                        </select>
+                    </div>
+                    <div class="Type">
+                        <p>Période:</p>
+                        <select>
+                            <option>Ce Mois</option>
+                            <option>Aujourd'hui</option>
+                            <option>Cette Semaine</option>
+                            <option>Ce Trimestre</option>
+                            <option>Cette Année</option>
+                        </select>
+                    </div>
+                    <div class="Type">
+                        <p>Format:</p>
+                        <select>
+                            <option>PDF</option>
+                            <option>Excel</option>
+                            <option>CSV</option>
+                        </select>
+                    </div>
+                    <div class="Type">
+                        <div class="CV">
+                            <button><i class="fa-solid fa-file"></i> Générer le Rapport</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="format2">
+                    <div class="Ventes">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div class="ligne_2_2">
+                            <h3>Ventes du mois</h3>
+                            <div class="euro">
+                                <div class="e">
+                                    <span>€45,678</span>
+                                    <p>Chiffre d'affaires</p>
+                                </div>
+                                <div class="e">
+                                    <span>+12.5%</span>
+                                    <p>vs mois dernier</p>
+                                </div>
+                            </div>
+                            <button>Voir détails</button>
+                        </div>
+                    </div>
+
+                    <div class="Ventes">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <div class="ligne_2_2">
+                            <h3>État du stock</h3>
+                            <div class="euro">
+                                <div class="e">
+                                    <span>1,234</span>
+                                    <p>Articles en stock</p>
+                                </div>
+                                <div class="e">
+                                    <span>23</span>
+                                    <p>Stock faible</p>
+                                </div>
+                            </div>
+                            <button>Voir détails</button>
+                        </div>
+                    </div>
+
+                    <div class="Ventes">
+                        <i class="fa-solid fa-users"></i>
+                        <div class="ligne_2_2">
+                            <h3>Clients</h3>
+                            <div class="euro">
+                                <div class="e">
+                                    <span>856</span>
+                                    <p>Nouveaux clients</p>
+                                </div>
+                                <div class="e">
+                                    <span>2,345</span>
+                                    <p>Total clients</p>
+                                </div>
+                            </div>
+                            <button>Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="format3">
+                    <div class="historique">
+                        <div class="rique">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h2>Historique des Rapports</h2>
+                        </div>
+                    </div>
+
+                    <div class="janvier">
+                        <strong>Nom du rapport</strong>
+                        <div class="action">
+                            <div class="x"><strong>Type</strong></div>
+                            <div class="x"><strong>Date de génération</strong></div>
+                        </div>
+                        <div class="action">
+                            <div class="x"><strong>Statut</strong></div>
+                            <div class="x"><strong>Actions</strong></div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="fervier">
+                        <div class="x">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <p>Rapport_ventes_janvier_2024.pdf</p>
+                        </div>
+                        <div class="action">
+                            <div class="x">
+                                <p>Ventes</p>
+                            </div>
+                            <div class="x">
+                                <p>15 Jan 2024</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="x">
+                                <p>Terminé</p>
+                            </div>
+                            <div class="x"><i class="fa-solid fa-download"></i> <i class="fa-solid fa-trash"></i></div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="mars">
+                        <div class="x">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <p>Stock_inventaire_janvier_2024.xlsx</p>
+                        </div>
+                        <div class="action">
+                            <div class="x">
+                                <p>Stock</p>
+                            </div>
+                            <div class="x">
+                                <p>14 Jan 2024</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="x">
+                                <p>Terminé</p>
+                            </div>
+                            <div class="x"><i class="fa-solid fa-download"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="avril">
+                        <div class="x">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Rapport_financier_trimestre.xlsx</p>
+                        </div>
+                        <div class="action">
+                            <div class="x">
+                                <p>Financier</p>
+                            </div>
+                            <div class="x">
+                                <p>En cours...</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="x">
+                                <p>En cours</p>
+                            </div>
+                            <div class="x">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

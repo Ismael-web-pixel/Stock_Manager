@@ -1,0 +1,712 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #063695;
+  color: white;
+  height: 100vh;
+}
+
+
+
+
+
+/* --------------------------------- STRUCTURE------------------------ ----- */
+.page3 {
+  display: flex;
+  height: 100vh;
+}
+
+/* ------------------------------- SIDEBAR--------------------- ---------------------- */
+.sidebar {
+  width: 250px;
+  background-color: #202E43;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.said {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.said i {
+  font-size: 1.8rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.active {
+  background-color: #2563eb;
+}
+
+.menu li a {
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #2f4465;
+}
+
+/*----------------------------- Bouton fermer dans le menu --------------------------------*/
+.close-btn {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 15px 20px;
+}
+
+/* ----- ----------------------------SIDEBAR FOOTER --------------------------------------- */
+.sidebar-footer {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+  border-top: 1px solid #2f4465;
+}
+
+.gestionnaire {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #2E3C50;
+}
+
+.gestionnaire i {
+  color: #286EED;
+  font-size: 2.5rem;
+}
+
+.ab {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profil {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #2E3C50;
+}
+
+.deconnexion {
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border: solid red;
+  border-radius: 10px;
+  align-items: center;
+  background-color: red;
+}
+
+/*-------------------------------------------- NAVBAR ------------------------------------*/
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h5 {
+  color: rgb(82, 80, 80);
+  font-size: 1.2rem;
+}
+
+.section_icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.div_notif {
+  position: relative;
+}
+
+.div_notif i {
+  font-size: 1.5rem;
+  color: rgb(114, 110, 110);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  right: -1px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  font-size: 0.8rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile i {
+  color: rgb(114, 110, 110);
+  font-size: 1.5rem;
+}
+
+.profile span {
+  color: rgb(114, 110, 110);
+  font-size: 1rem;
+}
+
+/* ----------------------------------------- BOUTON MENU ----------------------------- */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #202E43;
+}
+
+/* --------------------------------------- MAIN ------------------------------- */
+.main {
+  flex: 1;
+  background-color: #f2f4f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------- content ------------------------------- */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 60px;
+  overflow-y: scroll;
+}
+
+/* --------------------------------------------- BLOCK 1 -------------------------------------------- */
+.block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.ih1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.block1 h1 {
+  font-size: 2.3rem;
+  color: #111827;
+}
+
+.block1 p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+/*--------------------------------------------- ANALYTICS CARDS --------------------------------------------    */
+.Analytics_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card i {
+  color: #fff;
+  font-size: 2rem;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-card .ih2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.stat-card h2 {
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.stat-card p {
+  color: #65748b;
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------- Couleurs des cartes ————————————————-------------------------------------------- */
+.blue {
+  background-color: #286EED;
+  border-radius: 10px;
+
+}
+
+.worning {
+  background-color: #F59E0C;
+  border-radius: 10px;
+
+}
+
+.violy {
+  background-color: #9466F9;
+  border-radius: 10px;
+
+}
+
+.green {
+  background-color: #13B981;
+  border-radius: 10px;
+
+}
+
+/* ---------------------------- Filtres (bars1) ---------------------------- */
+.bars1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 25px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Chaque bloc de filtre */
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.filter select {
+  width: 250px;
+  padding: 15px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #f9fafb;
+  font-size: 0.9rem;
+  color: #374151;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.filter select:focus {
+  border-color: #286eed;
+}
+
+/* Champ de recherche */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+
+.search input {
+  padding: 15px 12px;
+  width: 280px;
+  margin-top: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: border 0.2s ease;
+}
+
+.search input:focus {
+  border-color: #286eed;
+}
+
+.search button {
+  background: #286eed;
+  color: #fff;
+  padding: 15px 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search button:hover {
+  background: #1f56c5;
+}
+
+/* ----------------------------------------------------bars2----------------------------------------------  */
+
+/* ---------------------------------------------------- bars2 ---------------------------------------------- */
+.bars2 {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 45px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.bars2:hover {
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+.Dupont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* permet l’adaptation sur petit écran */
+  gap: 15px;
+}
+
+.glace1,
+.glace2 {
+  line-height: 30px;
+}
+
+.glace2 h3 {
+  color: #1f56c5;
+}
+
+/* Bloc Pro (informations produits) */
+.Pro {
+  margin-top: 25px;
+  background-color: #f3f4f8;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Sous-sections dans Pro */
+.mobile,
+.ble {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* s’adapte sur petit écran */
+  gap: 15px;
+}
+
+/* Bloc moral1 (actions/modifications) */
+.moral1 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 25px;
+  flex-wrap: wrap;
+  /* permet de passer en colonne sur mobile */
+  margin-top: 25px;
+}
+
+/* Bouton Voir */
+.voir button {
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #286eed;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.voir button:hover {
+  background-color: #1f56c5;
+  transform: translateY(-3px);
+}
+
+/* Bouton Modifier */
+.modifier button {
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #111827;
+  border: none;
+  border: 1px solid #e5e7eb;
+  transition: background 0.3s ease;
+}
+
+.modifier button:hover {
+  background-color: #d1d5db;
+}
+
+/* Bouton Traiter */
+.Traiter button {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  color: #111827;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.colourbtn button {
+  color: #ffff;
+  background-color: #0DAEEE;
+}
+
+.Traiter button:hover {
+  background-color: #edf2ff;
+  color: #1d4ed8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .bars2 {
+    padding: 30px;
+  }
+
+  .Dupont {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mobile,
+  .ble {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .moral1 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .voir button,
+  .modifier button,
+  .Traiter button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .bars1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .filter select {
+    width: 100%;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .search {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .page3 {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 20;
+  }
+
+  .sidebar:target {
+    transform: translateX(0);
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .bars2 {
+    padding: 20px;
+  }
+
+  .voir button {
+    font-size: 0.9rem;
+  }
+
+  .modi label,
+  .Traiter label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter label {
+    font-size: 0.85rem;
+  }
+
+  .search button i {
+    font-size: 0.9rem;
+  }
+}

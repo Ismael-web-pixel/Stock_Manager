@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Manager</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+  <div class="page3">
+
+    <!-- SIDEBAR (avec un id pour :target) -->
+    <div class="sidebar" id="menu">
+      <a href="#" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+
+      <div class="said">
+        <i class="fa-solid fa-chart-line"></i>
+        <h1>Dashboard</h1>
+      </div>
+      <ul class="menu">
+        <li class="active">
+          <a href="./dashboard.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+        </li>
+        <li>
+          <a href="./Analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+        </li>
+        <li>
+          <a href="./Commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+        </li>
+        <li>
+          <a href="./Parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+        </li>
+        <li>
+          <a href="./Rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+        </li>
+        <li>
+          <a href="./Notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <div class="gestionnaire">
+          <i class="fa-solid fa-circle-user"></i>
+          <div class="ab">
+            <h3>Administrateur</h3>
+            <p>Gestionnaire</p>
+          </div>
+        </div>
+        <div class="profil">
+          <a href="#popup-profil">
+            <i class="fa-solid fa-circle-user"></i>
+            <h4>Mon profil</h4>
+          </a>
+        </div>
+        <div class="deconnexion">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <p>Déconnexion</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- MAIN -->
+    <div class="main">
+      <nav>
+        <!-- Bouton pour ouvrir le menu -->
+        <a href="#menu" class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <h5>Gestion de Stock - Produits Électroniques</h5>
+
+        <div class="section_icon">
+          <div class="div_notif">
+            <i class="fa-solid fa-bell"></i>
+            <span class="notification-badge">3</span>
+          </div>
+          <div class="profile">
+            <i class="fa-solid fa-circle-user"></i>
+            <span class="user-role">Administrateur</span>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <!------------------------------ block1 ------------------------------->
+        <div class="block1">
+          <div class="ih1">
+            <h1>Tableau de Bord Principal</h1>
+          </div>
+          <p>Gestion des stocks de produits électroniques</p>
+        </div>
+        <!---------------------------------- Analytics_content ----------------------------->
+        <div class="Analytics_content">
+
+          <!------------------------------------Bloc 2 ----------------------------->
+          <div class="stat-card">
+            <div class="blue">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <div class="ih2">
+              <h2>1,234</h2>
+              <p>Produits en Stock</p>
+            </div>
+          </div>
+
+          <!----------------------------------- Bloc 3 ------------------------------>
+          <div class="stat-card">
+            <div class="worning">
+              <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="ih2">
+              <h2>23</h2>
+              <p>Stock Faible</p>
+            </div>
+          </div>
+
+          <!-- ----------------------------- Bloc 4 ------------------------------->
+          <div class="stat-card">
+            <div class="green">
+              <i class="fa-solid fa-euro-sign"></i>
+            </div>
+            <div class="ih2">
+              <h2>€45, 768</h2>
+              <p>Valeur Totale</p>
+            </div>
+          </div>
+
+          <!------------------------Bloc 5 ------------------------------->
+          <div class="stat-card">
+            <div class="gray">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="ih2">
+              <h2>12</h2>
+              <p>Commandes Attente</p>
+            </div>
+          </div>
+
+        </div>
+
+        <section class="stocks">
+          <div class="stock-header">
+            <h2>Gestion des Stocks</h2>
+            <div class="stock-input">
+              <input type="search" placeholder="🔍 Rechercher un produit..." />
+
+            </div>
+            <div class="stock-actions">
+              <button class="add"><i class="fa-solid fa-plus"></i> Ajouter Produit</button>
+              <button class="export"><i class="fa-solid fa-download"></i> Exporter</button>
+            </div>
+          </div>
+
+          <div class="stock-table-container">
+            <table class="stock-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>PRODUIT</th>
+                  <th>CATÉGORIE</th>
+                  <th>STOCK</th>
+                  <th>PRIX</th>
+                  <th>STATUT</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#001</td>
+                  <td class="product">
+                    <i class="fa-solid fa-laptop"></i>
+                    <div>
+                      <p>MacBook Pro</p>
+                      <span>Apple - M3 Pro</span>
+                    </div>
+                  </td>
+                  <td><span class="category blue">LAPTOP</span></td>
+                  <td><span class="stock good">15</span></td>
+                  <td>€2,899</td>
+                  <td><span class="status active">Actif</span></td>
+                  <td class="actions">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>#002</td>
+                  <td class="product">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div>
+                      <p>iPhone 15 Pro</p>
+                      <span>Apple - 128GB</span>
+                    </div>
+                  </td>
+                  <td><span class="category orange">SMARTPHONE</span></td>
+                  <td><span class="stock low">8</span></td>
+                  <td>€1,199</td>
+                  <td><span class="status active">Actif</span></td>
+                  <td class="actions">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>#003</td>
+                  <td class="product">
+                    <i class="fa-solid fa-headphones"></i>
+                    <div>
+                      <p>AirPods Pro 2</p>
+                      <span>Apple - USB-C</span>
+                    </div>
+                  </td>
+                  <td><span class="category green">AUDIO</span></td>
+                  <td><span class="stock danger">3</span></td>
+                  <td>€279</td>
+                  <td><span class="status low">Stock Faible</span></td>
+                  <td class="actions">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>#004</td>
+                  <td class="product">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <div>
+                      <p>iPad Air</p>
+                      <span>Apple - 64GB</span>
+                    </div>
+                  </td>
+                  <td><span class="category purple">TABLETTE</span></td>
+                  <td><span class="stock good">22</span></td>
+                  <td>€649</td>
+                  <td><span class="status active">Actif</span></td>
+                  <td class="actions">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="popup-profil" id="popup-profil">
+    <div class="popup">
+      rjyffj
+    </div>
+    
+  </div>
+</body>
+
+</html>

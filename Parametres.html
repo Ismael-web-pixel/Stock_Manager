@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="Parametres.css">
+</head>
+
+<body>
+    <div class="page3">
+
+        <!------------------------------------------------ SIDEBAR (avec un id pour :target) ---------------------------------------------------------->
+        <div class="sidebar" id="menu">
+            <a href="#" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+
+            <div class="said">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Dashboard</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="./dashboard.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+                </li>
+                <li>
+                    <a href="./Analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                </li>
+                <li>
+                    <a href="./Commandes.html"><i class="fa-solid fa-cart-shopping"></i> Commandes</a>
+                </li>
+                <li class="active">
+                    <a href="./Parametres.html"><i class="fa-solid fa-gears"></i> Paramètres</a>
+                </li>
+                <li>
+                    <a href="./Rapports.html"><i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                </li>
+                <li>
+                    <a href="./Notifications.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="gestionnaire">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="ab">
+                        <h3>Administrateur</h3>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h4>Mon profil</h4>
+                </div>
+                <div class="deconnexion">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Déconnexion</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- MAIN -->
+        <div class="main">
+            <nav>
+                <!-- Bouton pour ouvrir le menu -->
+                <a href="#menu" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <h5>Gestion de Stock - Produits Électroniques</h5>
+
+                <div class="section_icon">
+                    <div class="div_notif">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="profile">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span class="user-role">Administrateur</span>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <!------------------------------ block1 ------------------------------->
+                <div class="block1">
+                    <div class="ih1">
+                        <i class="fa-solid fa-gears"></i>
+                        <h1>Paramétres & Configuration</h1>
+                    </div>
+                    <p>Configuration du systeme et preferences utilisateur</p>
+                </div>
+
+                <div class="generaux">
+                    <div class="param">
+                        <i class="fa-solid fa-sliders"></i>
+                        <h3>Parametres Géneraux</h3>
+                    </div>
+                    <div class="pointer">
+                        <div class="Notifications">
+                            <div class="email">
+                                <h4>Notifications</h4>
+                                <p>Recevoir des notifications par email</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="Notifications">
+                            <div class="email">
+                                <h4>Mode Sombre</h4>
+                                <p>Activer le mode sombrel</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="Notifications">
+                            <div class="email">
+                                <h4>Auto-sauvegarde</h4>
+                                <p>Sauvegarde automatique les modifications</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                       
+
+                    </div>
+                    <div class="pointer2">
+                     <div class="Notifications NotificationLangue">
+                            <div class="email">
+                                <h4>Langue</h4>
+                                <p>Langue de l'interface</p>
+                            </div>
+                            <select name="" id="">
+                                <option value="">Français</option>
+                                <option value="">Anglais</option>
+                                <option value="">Arabe</option>
+                                <option value="">Espagnol</option>
+                            </select>
+                        </div>
+                        </div>
+                </div>
+
+                <!-- -----------------------------------------div1---------------------------------------------- -->
+                <div class="div1">
+                    <div class="Stock">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <h3>Gestion en Stock</h3>
+                    </div>
+                    <div class="affiche">
+                        <div class="Seuil">
+                            <div class="alerte">
+                                <h5>Seuil alerte</h5>
+                                <p>Nombre minimum d'article avant alerte</p>
+                            </div>
+                            <input type="number" name="" id="">
+                        </div>
+
+                        <div class="Seuil">
+                            <div class="alerte">
+                                <h5>Auto-commande</h5>
+                                <p>Commander automatiquement en cas de stock faible</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="Seuil">
+                            <div class="alerte">
+                                <h5>Devise</h5>
+                                <p>Devise d'affichage</p>
+                            </div>
+                            <select name="" id="">
+                                <option value="">Euro (€)</option>
+                                <option value="">Dollard ($)</option>
+                                <option value="">Livre sterling (£)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------------------------------div2---------------------------------------------- -->
+                <div class="div2">
+                    <div class="Securite">
+                        <i class="fa-solid fa-shield"></i>
+                        <h3>Sécurité</h3>
+                    </div>
+                    <div class="affiche">
+
+                        <div class="Seuil">
+                            <div class="alerte">
+                                <h5>Authentification a deux facteurs</h5>
+                                <p>Activer la 2FA pour plus de securité</p>
+                            </div>
+                            <button>Activer</button>
+                        </div>
+
+                        <div class="Seuil">
+                            <div class="alerte">
+                                <h5>Changer le mot de passe</h5>
+                                <p>Mofidier votre mot de passe actuel</p>
+                            </div>
+                            <div class="chan">
+                                <button>Changer</button>
+                            </div>
+                        </div>
+                        <div class="Seuil">
+                            <div class="alerte">
+                                <h5>Sessions actives</h5>
+                                <p>Gerer les sessions connectées</p>
+                            </div>
+                            <div class="voir">
+                                <button>Voir (3)</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ----------------------------------------------div3----------------------------------------- -->
+
+                <div class="div3">
+                    <div class="Securite">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Systeme</h3>
+                    </div>
+                    <div class="defaut">
+                        <div class="regle10">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            <strong>Sauvegarder la Configuration</strong>
+                        </div>
+                        <div class="regle11">
+                            <i class="fa-solid fa-download"></i>
+                            <strong>Exporter les Parametres</strong>
+                        </div>
+                        <div class="regle12">
+                            <i class="fa-solid fa-trash-can-arrow-up"></i>
+                            <strong>Réinitialiser par defaut</strong>
+                        </div>
+                        <div class="regle13">
+                            <i class="fa-solid fa-trash-can-arrow-up"></i>
+                            <strong>Effacer toutes les données</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
