@@ -607,3 +607,84 @@ nav h5 {
   border-radius: 6px;
   cursor: pointer;
 }
+
+/* ============================== */
+/*   RESPONSIVE POUR ≤ 768px      */
+/* ============================== */
+
+@media (max-width: 768px) {
+  
+    .center {
+        display: grid;
+        grid-template-columns: 1fr;  
+        gap: 20px;
+    }
+
+    .center > div {
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .display1, .display2, .display3, .display4{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+     .critique {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    } 
+
+     .filtre {
+        width: 100%;
+    } 
+     .filtre select{
+        width: 100%;
+    } 
+
+    .fil button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+} 
+
+
+@media (max-width: 768px) {
+  .page3 {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 20;
+  }
+
+  .sidebar:target {
+    transform: translateX(0);
+  }
+
+  .close-btn {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  nav {
+    gap: 10px;
+  }
+}
