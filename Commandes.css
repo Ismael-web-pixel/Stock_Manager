@@ -115,6 +115,14 @@ body {
   align-items: center;
   background-color: #2E3C50;
 }
+.profil a {
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  gap: 10px;
+}
 
 .deconnexion {
   gap: 10px;
@@ -463,10 +471,14 @@ nav h5 {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 11px 20px;
   border-radius: 8px;
   background-color: #286eed;
   transition: background 0.3s ease, transform 0.2s ease;
+}
+.voir button a{
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .voir button:hover {
@@ -481,10 +493,13 @@ nav h5 {
   border-radius: 8px;
   padding: 10px 20px;
   background-color: transparent;
-  color: #111827;
   border: none;
   border: 1px solid #e5e7eb;
   transition: background 0.3s ease;
+}
+.modifier button a{
+  color: #111827;
+  text-decoration: none;
 }
 
 .modifier button:hover {
@@ -512,9 +527,183 @@ nav h5 {
   background-color: #edf2ff;
   color: #1d4ed8;
 }
+/* Popup style  */
+.popup-profil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.popup-profil:target {
+  display: flex;
+}
+
+/* CARD */
+.popup-card {
+  width: 40%;
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.popup-header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.popup-header i {
+  font-size: 1.7rem;
+}
+.popup-header a{
+  color: black;
+  text-decoration: none;
+}
+
+.close-btn {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* PHOTO */
+.photo-block {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.photo-round {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #3A68FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 3rem;
+}
+
+.btn-photo {
+  margin-top: 12px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 7px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  background: #fafafa;
+  margin-bottom: 40px;
+}
+
+.full {
+  grid-column: span 2;
+}
+
+/* FOOTER */
+.popup-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.btn-cancel {
+  padding: 10px 16px;
+  background: #e5e5e5;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-save {
+  padding: 10px 16px;
+  background: #3A68FF;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* popup detail commande */
+.detailOrder {
+    padding: 20px;
+    font-family: sans-serif;
+    color: #222;
+}
+
+.detailOrder h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.label {
+    color: #7a7a7a;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.col_liv{
+    display: flex;
+    flex-direction: column;
+}
+.col_liv input {
+    padding: 15px 20px;
+}
+
+.Notes_internes input{
+    display: flex;
+    justify-content: start;
+    height: 10vh;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
 
 
-
+/* popup edite commande */
 
 
 

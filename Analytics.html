@@ -51,9 +51,11 @@
                     </div>
                 </div>
 
-                <div class="profil">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <h4>Mon profil</h4>
+                  <div class="profil">
+                    <a href="#popup-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Mon profil</h4>
+                    </a>
                 </div>
 
                 <div class="deconnexion">
@@ -329,6 +331,71 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+        <!-- POPUP -->
+    <div class="popup-profil" id="popup-profil">
+        <div class="popup-card">
+
+            <!-- HEADER -->
+            <div class="popup-header">
+                <div class="left">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h2>Mon profil</h2>
+                </div>
+                <a href="#" class="close-btn"><a href="" class="fa-solid fa-xmark"></a></a>
+            </div>
+
+            <!-- BODY -->
+            <div class="popup-body">
+
+                <div class="photo-block">
+                    <div class="photo-round">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <button class="btn-photo">Changer de photos</button>
+                </div>
+
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label>Nom:</label>
+                        <input type="text" value="Administrateur">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Prénom:</label>
+                        <input type="text" value="Jean">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" value="ismo@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>ID:</label>
+                        <input type="text" value="857220...">
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Rôle:</label>
+                        <input type="text" value="Administrateur">
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Dernière Connexion:</label>
+                        <input type="text" value="15 Janvier 2024 à 14:30">
+                    </div>
+
+                </form>
+            </div>
+            <hr>
+            <!-- FOOTER -->
+            <div class="popup-footer">
+                <a href="#" class="btn-cancel">Annuler</a>
+                <button class="btn-save">Sauvegarder</button>
+            </div>
+
         </div>
     </div>
 </body>

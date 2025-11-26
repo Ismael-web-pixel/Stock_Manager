@@ -50,8 +50,10 @@
                     </div>
                 </div>
                 <div class="profil">
-                    <i class="fa-solid fa-circle-user"></i>
-                    <h4>Mon profil</h4>
+                    <a href="#popup-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h4>Mon profil</h4>
+                    </a>
                 </div>
                 <div class="deconnexion">
                     <i class="fa-solid fa-right-to-bracket"></i>
@@ -204,11 +206,20 @@
                     <!-- ---------------------------------------------------classe Details----------------------------------- -->
                     <div class="moral1">
                         <div class="voir">
-                            <button><i class="fa-solid fa-eye"></i> Voir Details</button>
+                            <button>
+                                <a href="#popup-detail">
+
+                                    <i class="fa-solid fa-eye"></i>
+                                    Voir Details
+                                </a>
+                            </button>
                         </div>
                         <div class="modifier">
                             <button>
-                                <i class="fa-regular fa-pen-to-square"></i>Modifier
+                                <a href="#popup-edit">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Modifier
+                                </a>
                             </button>
                         </div>
                         <div class="Traiter">
@@ -249,7 +260,12 @@
                     <!-- ---------------------------------------------------classe Details----------------------------------- -->
                     <div class="moral1">
                         <div class="voir">
-                            <button><i class="fa-solid fa-eye"></i> Voir Details</button>
+                            <button>
+                                <a href="#popup-detail">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Voir Details
+                                </a>
+                            </button>
                         </div>
                         <div class="modifier">
                             <button>
@@ -294,7 +310,12 @@
                     <!-- ---------------------------------------------------classe Details----------------------------------- -->
                     <div class="moral1">
                         <div class="voir">
-                            <button><i class="fa-solid fa-eye"></i> Voir Details</button>
+                            <button>
+                                <a href="#popup-detail">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Voir Details
+                                </a>
+                            </button>
                         </div>
                         <div class="modifier colourbtn">
                             <button>
@@ -311,6 +332,234 @@
                 </div>
 
 
+            </div>
+        </div>
+    </div>
+    <!-- POPUP -->
+    <div class="popup-profil" id="popup-profil">
+        <div class="popup-card">
+
+            <!-- HEADER -->
+            <div class="popup-header">
+                <div class="left">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h2>Mon profil</h2>
+                </div>
+                <a href="#" class="close-btn"><a href="" class="fa-solid fa-xmark"></a></a>
+            </div>
+
+            <!-- BODY -->
+            <div class="popup-body">
+
+                <div class="photo-block">
+                    <div class="photo-round">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <button class="btn-photo">Changer de photos</button>
+                </div>
+
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label>Nom:</label>
+                        <input type="text" value="Administrateur">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Prénom:</label>
+                        <input type="text" value="Jean">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" value="ismo@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>ID:</label>
+                        <input type="text" value="857220...">
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Rôle:</label>
+                        <input type="text" value="Administrateur">
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Dernière Connexion:</label>
+                        <input type="text" value="15 Janvier 2024 à 14:30">
+                    </div>
+
+                </form>
+            </div>
+            <hr>
+            <!-- FOOTER -->
+            <div class="popup-footer">
+                <a href="#" class="btn-cancel">Annuler</a>
+                <button class="btn-save">Sauvegarder</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- POPUP COMMANDE DETAIL -->
+    <div class="popup-profil" id="popup-detail">
+        <div class="popup-card">
+            <!-- HEADER -->
+            <div class="popup-header">
+                <div class="left">
+                    <i class="fa-solid fa-eye"></i>
+                    <h2>Details de la commande</h2>
+                </div>
+                <a href="#" class="close-btn"><a href="" class="fa-solid fa-xmark"></a></a>
+            </div>
+
+            <div class="detailOrder">
+
+                <!-- Informations Commandes -->
+                <h3>Informations Commandes</h3>
+
+                <div class="order-section">
+                    <div class="row">
+                        <div class="col">
+                            <p class="label">Numero de Commande:</p>
+                            <p class="value">Commande #CMD - 2024 - 001:</p>
+                        </div>
+                        <div class="col">
+                            <p class="label">Date de Commande:</p>
+                            <p class="value">15 jan 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="label">Statut:</p>
+                            <p class="value">En attente</p>
+                        </div>
+                        <div class="col">
+                            <p class="label">Total:</p>
+                            <p class="value">€1, 199.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Informations Client -->
+                <h3>Informations Client</h3>
+
+                <div class="order-section">
+                    <div class="row">
+                        <div class="col">
+                            <p class="label">Nom:</p>
+                            <p class="value">Jean Dupont</p>
+                        </div>
+                        <div class="col">
+                            <p class="label">Email:</p>
+                            <p class="value">Jean.dupont@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="label">Telephone:</p>
+                            <p class="value">+33 6 12 34 56 78</p>
+                        </div>
+                        <div class="col">
+                            <p class="label">Adresse:</p>
+                            <p class="value">123 Rue de la Paix, 75001 Paris</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Articles Commandés -->
+                <h3>Articles commandés</h3>
+
+                <div class="article-card">
+                    <div class="article-left">
+                        <i class="fa-solid fa-mobile"></i>
+                        <div class="info">
+                            <p class="product-name">iPhone 15 Pro <span class="small">128GB - Bleu</span></p>
+                        </div>
+                    </div>
+
+                    <div class="article-center">
+                        <p>1</p>
+                    </div>
+
+                    <div class="article-right">
+                        <p>€1,199.00</p>
+                        <p class="total">€1,199.00</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <!-- FOOTER -->
+            <div class="popup-footer">
+                <a href="#" class="btn-cancel">Annuler</a>
+                <button class="btn-save">Sauvegarder</button>
+            </div>
+        </div>
+    </div>
+    <!-- POPUP COMMENDE EDIT -->
+    <div class="popup-profil" id="popup-edit">
+        <div class="popup-card">
+            <!-- HEADER -->
+            <div class="popup-header">
+                <div class="left">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Modofier la Commande</h2>
+                </div>
+                <a href="#" class="close-btn"><a href="" class="fa-solid fa-xmark"></a></a>
+            </div>
+
+            <div class="detailOrder">
+
+                <h3>Informations Commande</h3>
+
+                <div class="order-section">
+                        <div class="col">
+                            <label class="label">Statut:</label>
+                            <select class="input">
+                                <option value="En attente">En attente</option>
+                                <option value="En cours">En cours</option>
+                                <option value="Livrée">Livrée</option>
+                                <option value="Annulée">Annulée</option>
+                            </select>
+                        </div>
+                </div>
+
+                <h3>Informations Client</h3>
+
+                <div class="order-section">
+                        <div class="Notes_internes">
+                            <label class="label">Adresse de Livraison:</label>
+                            <input type="text" class="input" value="" placeholder="123 Rue de la Paix, 75001 Paris">
+                        </div>
+                </div>
+                    <div class="col_liv">
+                        <label for="start">Date de Livraison prévue:</label>
+                        <input type="date"/>
+                    </div>
+
+                <h3>Notes</h3>
+                    <div class="Notes_internes">
+                            <label class="label">Notes internes:</label>
+                            <input type="text" class="input" value="" placeholder="Notes internets pour l'equipe">
+                    </div>
+            </div>
+
+
+
+
+            <hr>
+            <!-- FOOTER -->
+            <div class="popup-footer">
+                <a href="#" class="btn-cancel">Annuler</a>
+                <button class="btn-save">Sauvegarder</button>
             </div>
         </div>
     </div>
